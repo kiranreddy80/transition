@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head><style>
+.kiran{
+    background-color: beige;
+    
+}
+#item1,#item2,#item3,#item4{
+    border: 2px solid  black;
+    width: 90px;
+    height: 70px;
+    text-align: center;
+    background-color: aquamarine;
+    display: inline-block;
+    margin: 20px;
+    transition: 3s all;
+   
+}
+img{
+    height: 220px;
+    width: 160px;
+    padding: 20px;
+}
+#item1:hover~img{
+    transform: translate(40px,90px);
+    border: 2px solid pink;
+}
+#item2:hover~img{
+    transform: scale(1.9);
+    border: 2px solid rgb(14, 157, 240);
+}
+#item3:hover~img{
+    transform: rotate(60deg);
+    border: 2px solid rgb(5, 225, 30);
+}
+#item4:hover~img{
+    transform: skew(20deg);
+    border: 2px solid rgb(29, 28, 28);
+}
+</style>
+<body>
+    <div class="kiran">
+        <div class="kiran" id="item1">transition</div>
+        <div class="kiran" id="item2">scale</div>
+        <div class="kiran" id="item3">rotation</div>
+        <div class="kiran" id="item4">skew</div>
+    
+    <img src="./mhs.jpeg">
+</body>
+</html>

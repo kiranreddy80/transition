@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head><style>
+    .kiran{
+        border: 4px solid rgb(208, 208, 235);
+        background-color: black;
+
+    }
+    #item1{
+        border: 2px solid rgb(20, 227, 96);
+        padding: 40px;
+        margin: 10px;
+        width: 200px;
+        height: 20vh;
+        background-color: rgb(17, 16, 16);
+        color: aqua;
+        text-align: center;
+        border-radius: 35px;
+        display: inline-block;
+        /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+       
+
+    }
+    #item1:hover{
+        transform: translate(30px,40px);
+    }
+    #item2{
+        border: 2px solid rgb(20, 227, 96);
+        padding: 40px;
+        margin: 10px;
+        width: 200px;
+        height: 20vh;
+        background-color: rgb(248, 156, 156);
+        color: rgb(231, 226, 242);
+        text-align: center;
+        border-radius: 35px;
+        display: inline-block;
+       
+
+    }
+    #item2:hover{
+        transform: translate(90px);
+    }
+    #item3{
+        border: 2px solid rgb(20, 227, 96);
+        padding: 40px;
+        margin: 10px;
+        width: 200px;
+        height: 20vh;
+        background-color: rgb(241, 184, 114);
+        color: rgb(13, 23, 23);
+        text-align: center;
+        border-radius: 35px;
+        display: inline-block;
+       
+
+    }
+    #item3:hover{
+        transform: translateY(20px);
+    }
+    #item4{
+        border: 2px solid rgb(20, 227, 96);
+        padding: 40px;
+        margin: 10px;
+        width: 200px;
+        height: 20vh;
+        background-color: rgb(68, 184, 234);
+        color: rgb(8, 9, 9);
+        text-align: center;
+        border-radius: 35px;
+        display: inline-block;
+       
+
+    }
+    #item4:hover{
+        transform: translateX(120px);
+    }
+    #item5{
+        border: 2px solid rgb(20, 227, 96);
+        padding: 40px;
+        margin: 10px;
+        width: 200px;
+        height: 20vh;
+        background-color: rgb(203, 227, 237);
+        color: rgb(8, 9, 9);
+        text-align: center;
+        border-radius: 35px;
+        display: inline-block;
+       
+
+    }
+    #item5:hover{
+        transform: scale(0.5,1.5);
+    }
+    #item6{
+        border: 2px solid rgb(20, 227, 96);
+        padding: 40px;
+        margin: 10px;
+        width: 200px;
+        height: 20vh;
+        background-color: rgb(64, 228, 149);
+        color: rgb(32, 109, 203);
+        text-align: center;
+        border-radius: 35px;
+        display: inline-block;
+        /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+       
+
+    }
+    #item6:hover{
+        transform: scaleX(1.2);
+    }
+    #item7{
+        border: 2px solid rgb(20, 227, 96);
+        padding: 40px;
+        margin: 10px;
+        width: 200px;
+        height: 20vh;
+        background-color: rgb(249, 116, 21);
+        color: rgb(194, 211, 211);
+        text-align: center;
+        border-radius: 35px;
+        display: inline-block;
+       
+
+    }
+    #item7:hover{
+        transform: scaleY(1.7);
+    }
+    #item8{
+        border: 2px solid rgb(20, 227, 96);
+        padding: 40px;
+        margin: 10px;
+        width: 200px;
+        height: 20vh;
+        background-color: rgb(200, 234, 7);
+        color: rgb(8, 239, 239);
+        text-align: center;
+        border-radius: 35px;
+        display: inline-block;
+        /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+       
+
+    }
+    #item8:hover{
+        transform: scaleX(1.4);
+    }
+    #item9{
+        border: 2px solid rgb(20, 227, 96);
+        padding: 40px;
+        margin: 10px;
+        width: 200px;
+        height: 20vh;
+        background-color: rgb(68, 184, 234);
+        color: rgb(8, 9, 9);
+        text-align: center;
+        border-radius: 35px;
+        display: inline-block;
+        transition: 3s;
+       
+
+    }
+    #item9:hover{
+        transform: rotate(120deg);
+    }
+    #item10{
+        border: 2px solid rgb(20, 227, 96);
+        padding: 40px;
+        margin: 10px;
+        width: 200px;
+        height: 20vh;
+        background-color: rgb(18, 18, 18);
+        color: rgb(51, 239, 239);
+        text-align: center;
+        border-radius: 35px;
+        display: inline-block;
+        transition: 3s;
+       
+
+    }
+    #item10:hover{
+        transform: rotate(90deg);
+    }
+    #item11{
+        border: 2px solid rgb(20, 227, 96);
+        padding: 40px;
+        margin: 10px;
+        width: 200px;
+        height: 20vh;
+        background-color: rgb(152, 83, 221);
+        color: rgb(238, 227, 227);
+        text-align: center;
+        border-radius: 35px;
+        display: inline-block;
+        transition: 3s;
+       
+
+    }
+    #item11:hover{
+        transform: rotate(-12deg);
+    }
+    #item12{
+        border: 2px solid rgb(20, 227, 96);
+        padding: 40px;
+        margin: 10px;
+        width: 200px;
+        height: 20vh;
+        background-color: rgb(247, 230, 207);
+        color: rgb(8, 9, 9);
+        text-align: center;
+        border-radius: 35px;
+        display: inline-block;
+        transition: 3s;
+       
+
+    }
+    #item12:hover{
+        transform: rotate(360deg);
+    }
+    #item13{
+        border: 2px solid rgb(20, 227, 96);
+        padding: 40px;
+        margin: 10px;
+        width: 200px;
+        height: 20vh;
+        background-color: rgb(239, 72, 209);
+        color: rgb(8, 9, 9);
+        text-align: center;
+        border-radius: 35px;
+        display: inline-block;
+        transition: 3s;
+       
+
+    }
+    #item13:hover{
+        transform: skew(10deg,40deg);
+    }
+    #item14{
+        border: 2px solid rgb(20, 227, 96);
+        padding: 40px;
+        margin: 10px;
+        width: 200px;
+        height: 20vh;
+        background-color: rgb(237, 229, 235);
+        color: rgb(82, 237, 151);
+        text-align: center;
+        border-radius: 35px;
+        display: inline-block;
+        transition: 3s;
+       
+
+    }
+    #item14:hover{
+        transform: skewX(80deg);
+    }
+    #item15{
+        border: 2px solid rgb(20, 227, 96);
+        padding: 40px;
+        margin: 10px;
+        width: 200px;
+        height: 20vh;
+        background-color: rgb(179, 234, 197);
+        color: rgb(8, 9, 9);
+        text-align: center;
+        border-radius: 35px;
+        display: inline-block;
+        transition: 3s;
+       
+
+    }
+    #item15:hover{
+        transform: skew(360deg);
+    }
+    #item16{
+        border: 2px solid rgb(20, 227, 96);
+        padding: 40px;
+        margin: 10px;
+        width: 200px;
+        height: 20vh;
+        background-color: rgb(243, 98, 98);
+        color: rgb(230, 236, 236);
+        text-align: center;
+        border-radius: 35px;
+        display: inline-block;
+        transition: 3s;
+        /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+       
+
+    }
+    #item16:hover{
+        transform: skewY(40deg);
+    }
+
+    #item17{
+        border: 2px solid rgb(20, 227, 96);
+        padding: 40px;
+        margin: 10px;
+        width: 200px;
+        height: 20vh;
+        background-color: rgb(243, 98, 98);
+        color: rgb(230, 236, 236);
+        text-align: center;
+        border-radius: 35px;
+        display: inline-block;
+        transition: 3s;
+       
+
+    }
+    #item17:hover{
+        transform: scale(1.5);
+    }
+
+    #item18{
+        border: 2px solid rgb(20, 227, 96);
+        padding: 40px;
+        margin: 10px;
+        width: 200px;
+        height: 20vh;
+        background-color: rgb(243, 98, 98);
+        color: rgb(230, 236, 236);
+        text-align: center;
+        border-radius: 35px;
+        display: inline-block;
+        transition: 3s;
+        /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+       
+
+    }
+    #item18:hover{
+        transform: rotate(90deg);
+    }
+   
+</style>
+<body>
+    <div class="kiran">
+        <div class="class" id=item1>translate</div>
+        <div class="class" id=item2>translate</div>
+        <div class="class" id=item3>translate</div>
+        <div class="class" id=item4>translate</div>
+        <div class="class" id=item5>scale</div>
+        <div class="class" id=item6>scale</div>
+        <div class="class" id=item7>scale</div>
+        <div class="class" id=item8>scale</div>
+        <div class="class" id=item9>rotate</div>
+        <div class="class" id=item10>rotate</div>
+        <div class="class" id=item11>rotate</div>
+        <div class="class" id=item12>rotate</div>
+        <div class="class" id=item13>skew</div>
+        <div class="class" id=item14>skew</div>
+        <div class="class" id=item15>skew</div>
+        <div class="class" id=item16>skew</div>
+       
+        <div class="class" id=item17>scale</div>
+        <div class="class" id=item18>rotate</div>
+        
+    </div>
+</body>
+</html>
